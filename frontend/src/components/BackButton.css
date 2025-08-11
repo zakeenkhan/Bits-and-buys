@@ -1,0 +1,19 @@
+.back-button {
+  position: fixed;
+  bottom: 20px;        /* Changed from top to bottom */
+  right: 20px;         /* Changed from left to right */
+  background-color: #222;
+  color: white;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: skyblue;
+}

@@ -1,0 +1,493 @@
+.summer-deal-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+
+.summer-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.deal-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.deal-btn:hover {
+  background-color: #e73370;
+}
+
+.deal-btn.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.deal-info {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fefefe;
+}
+
+.deal-info h2 {
+  margin-bottom: 1rem;
+}
+
+.deal-note {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.summer-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.category-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.category-card p {
+  padding: 0 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* src/pages/bundleOffer.css */
+
+.bundle-offer-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #fff8f0, #fdfdfd);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bundle-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bundle-text {
+  flex: 1 1 500px;
+}
+
+.bundle-text h2 {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
+.bundle-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.bundle-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.bundle-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #111;
+}
+
+.bundle-btn {
+  display: inline-block;
+  background-color: #1db954;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.bundle-btn:hover {
+  background-color: #17a74d;
+}
+
+.bundle-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.bundle-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.bundle-image img:hover {
+  transform: scale(1.03);
+}
+.clearance-sale {
+  padding: 4rem 2rem;
+  background: #fff0f0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.clearance-header h2 {
+  font-size: 2.5rem;
+  color: #d62828;
+  margin-bottom: 0.5rem;
+}
+
+.clearance-header p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.clearance-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.clearance-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  width: 250px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.clearance-card:hover {
+  transform: scale(1.05);
+}
+
+.clearance-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.clearance-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #111;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.new-price {
+  color: #e63946;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.clearance-footer {
+  margin-top: 2.5rem;
+}
+
+.clearance-btn {
+  background-color: #d62828;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.clearance-btn:hover {
+  background-color: #a31e1e;
+}
+
+/* Stock badge */
+.stock-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+/* src/pages/bogoOffer.css */
+
+.bogo-section {
+  padding: 4rem 2rem;
+  background: #f0fbf5;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.bogo-header h2 {
+  font-size: 2.5rem;
+  color: #20c997;
+  margin-bottom: 0.5rem;
+}
+
+.bogo-header p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+
+.bogo-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.bogo-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 260px;
+  position: relative;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bogo-card:hover {
+  transform: translateY(-5px);
+}
+
+.bogo-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.bogo-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.bogo-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.bogo-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #20c997;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+.free {
+  background-color: #e63946;
+}
+
+.bogo-footer {
+  margin-top: 3rem;
+}
+
+.bogo-btn {
+  background-color: #20c997;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.bogo-btn:hover {
+  background-color: #17b187;
+}
+.clearance-buy-btn {
+   margin-top: auto;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clearance-buy-btn:hover {
+  background-color: blue;
+}
+.offer-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.offer-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+/* offers.css */
+
+.offer-page {
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.offer-card {
+  width: 100%;
+  max-width: 360px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.offer-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.offer-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.offer-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.4rem 0;
+}
+
+.offer-card strong {
+  color: #111;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.6rem 0.3rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.order-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.order-btn:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+.clearance-header h2,
+.clearance-header p {
+  margin: 0.5rem 0;
+}
+
+.clearance-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.clearance-btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #ff4742;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.clearance-btn:hover {
+  background-color: #d43c38;
+}

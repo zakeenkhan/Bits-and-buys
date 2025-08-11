@@ -1,0 +1,356 @@
+/* Home Page Styles */
+html {
+  overflow-y: scroll; /* Always reserve space for vertical scrollbar */
+}
+
+/* Optional: Prevent horizontal scroll which can cause jitter */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 9rem 1rem;
+  color: black;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 span {
+  color: #ffeb3b;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero .btn {
+  margin-top: 1rem;
+  background-color: #ffeb3b;
+  padding: 1rem 2rem;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn:hover {
+  background-color: #fdd835;
+  transform: scale(1.05);
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Features Section */
+.features {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Product Card */
+.product-card {
+  opacity: 1; /* Fix */
+  transform: translateY(0); /* Fix */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 255, 128, 0.1);
+  padding: 1rem;
+  width: 100%;
+}
+.product-card.reveal {
+  opacity: 1;
+  transform: translateY(5);
+}
+
+.product-card img {
+  width: 100%;
+  height: 313px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #000;
+}
+
+.product-card p {
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.rating {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.1rem;
+  color: gold;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  background-color: yellow;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sm:hover {
+  background-color: white;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #fdfdfd, #f0f0f0);
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.about p {
+  max-width: 750px;
+  margin: 0 auto 1.2rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.about strong {
+  color: #1db954;
+  font-weight: 600;
+}
+
+/* Optional fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Section */
+.footer {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  padding: 2rem 1rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.footer h2 {
+  color: #1db954;
+  margin-bottom: 0.5rem;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  color: #ffeb3b;
+}
+
+.footer p,
+.footer li {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #1db954;
+}
+
+.footer-contact p {
+  font-size: 0.95rem;
+}
+
+.footer-social .social-icons a {
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #1db954;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Scroll-to-Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: skyblue;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+.ads-section {
+  margin: 3rem 0;
+}
+
+.ad-banner {
+  position: relative;
+  height: 120vh;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.ads-section.split-banner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 78vh;
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-half {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+}
+
+.text-half {
+  flex: 1;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111;
+}
+
+.text-half h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #e63946;
+}
+
+.text-half p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.ad-banner .overlay {
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.ad-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ad-banner p {
+  font-size: 1.2rem;
+}

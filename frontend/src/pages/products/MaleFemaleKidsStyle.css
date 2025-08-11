@@ -1,0 +1,218 @@
+/* src/pages/products/Male.css */
+.male {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+/* src/pages/products/Female.css */
+.female {
+  padding: 2rem;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+/* src/pages/products/Kids.css */
+.kids {
+  padding: 2rem;
+  background-color: #e0f7fa;
+  color: #222;
+}
+
+/* src/styles/Male.css */
+.male-page {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.advertisement {
+  background: linear-gradient(135deg, #111, skyblue);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.advertisement h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 2rem 1rem 1rem;
+  margin: 0 auto;
+  justify-content: none;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1db954;
+  font-weight: bold;
+}
+
+.product-info p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+.product-info button {
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  margin-left: 53px;
+}
+
+.product-info button:hover {
+  background-color: blue;
+}
+
+.philosophy {
+  margin-top: 4rem;
+}
+
+.philosophy h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.philosophy p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.subscribe {
+  margin-top: 3rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.subscribe h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subscribe-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.6rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.subscribe-form button {
+  padding: 0.6rem 2rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.subscribe-form button:hover {
+  background-color: #333;
+}
+
+
+.female-page {
+  padding: 2rem;
+  background-color: #fff0f5; /* light pink */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.kids-page {
+  padding: 2rem;
+  background-color: #e0f7fa; /* light aqua blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
