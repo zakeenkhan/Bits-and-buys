@@ -43,33 +43,36 @@ Here are some screenshots of the application in action:
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps.
+To get this project up and running on your local machine, follow these simple steps.
 
 ### Prerequisites
 
-*   Node.js and npm
-*   PostgreSQL
+Make sure you have the following installed:
+*   [Node.js](https://nodejs.org/)
+*   [npm](https://www.npmjs.com/get-npm)
+*   [PostgreSQL](https://www.postgresql.org/)
 
-### Installation
+### Setup Instructions
 
-1.  **Clone the repo**
-    ```sh
-    git clone https://github.com/your_username/Bits-and-Buy.git
-    ```
-2.  **Install backend dependencies**
+1.  **Navigate to the Backend Directory and Install Dependencies:**
+
+    Open a terminal and run the following commands:
     ```sh
     cd backend
     npm install
     ```
-3.  **Install frontend dependencies**
+
+2.  **Navigate to the Frontend Directory and Install Dependencies:**
+
+    In a **new terminal window**, run the following commands:
     ```sh
-    cd ../frontend
+    cd frontend
     npm install
     ```
-4.  **Set up environment variables**
 
-    Create a `.env` file in the `backend` directory and add the following:
+3.  **Set Up Environment Variables:**
 
+    In the `backend` directory, create a `.env` file and add the necessary configuration for your database and JWT secret:
     ```
     DB_USER=your_db_user
     DB_HOST=your_db_host
@@ -81,14 +84,19 @@ To get a local copy up and running, follow these simple steps.
 
 ### Running the Application
 
-1.  **Start the backend server**
+To run the application, you will need two separate terminals.
+
+1.  **Start the Backend Server:**
+
+    In your first terminal, from the `backend` directory, run:
     ```sh
-    cd backend
     npm start
     ```
-2.  **Start the frontend development server**
+
+2.  **Start the Frontend Application:**
+
+    In your second terminal, from the `frontend` directory, run:
     ```sh
-    cd frontend
     npm start
     ```
 
