@@ -51,40 +51,53 @@ app.get('/api/health', async (req, res) => {
       database: 'connected',
       timestamp: new Date().toISOString() 
     });
-    // Read the current .env file
-    let envContent = '';
-    try {
-      envContent = await fs.readFile(frontendEnvPath, 'utf8');
-    } catch (readErr) {
-      console.log('⚠️  Could not read frontend .env file, creating a new one...');
-    }
-    
-    // Update the API URL
-    const updatedEnv = envContent.replace(
-      /REACT_APP_API_URL=.*/,
-      `REACT_APP_API_URL=http://localhost:${port}/api`
-    );
-    
-    // Write the updated content back to the file
-    await fs.writeFile(frontendEnvPath, updatedEnv, 'utf8');
-    console.log(`✅ Updated frontend .env to use port ${port}`);
   } catch (err) {
-    console.error('⚠️  Could not update frontend .env file:', err.message);
+    res.status(500).json({ 
+      status: 'API is running',
+      database: 'connection failed',
+      error: err.message 
+    });
   }
 });
 
-// Handle server errors
-server.on('error', (error) => {
-  if (error.code === 'EADDRINUSE') {
-    console.error(`❌ Port ${PORT} is already in use. Please close the other process or update the PORT in .env file.`);
-  } else {
-    console.error('❌ Server error:', error);
-  }
-  process.exit(1);
+// Import and use routes with the pool
+app.use('/api/products', require('./routes/productRoutes')(pool));
+app.use('/api/orders', require('./routes/orderRoutes')(pool));
+app.use('/api/summer-offers', require('./routes/offerRoutes')(pool));
+app.use('/api/clearance-items', require('./routes/clearance')(pool));
+
+// Root endpoint
+app.get('/', (req, res) => {
+  res.send('🚀 Bits & Buy API is running!');
 });
 
-// Handle unhandled promise rejections
-process.on('unhandledRejection', (err) => {
-  console.error('❌ Unhandled Rejection:', err);
-  server.close(() => process.exit(1));
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Error:', err.stack);
+  res.status(500).json({ 
+    error: 'Internal Server Error',
+    message: process.env.NODE_ENV === 'development' ? err.message : 'Something went wrong!'
+  });
 });
+
+// Handle 404
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not Found' });
+});
+
+// For Vercel, we need to export the app
+if (process.env.NODE_ENV === 'production') {
+  module.exports = app;
+} else {
+  // For local development
+  const server = app.listen(PORT, () => {
+    console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+    console.log(`CORS allowed origins: ${allowedOrigins.join(', ')}`);
+  });
+
+  // Handle unhandled promise rejections
+  process.on('unhandledRejection', (err) => {
+    console.error(`Error: ${err.message}`);
+    server.close(() => process.exit(1));
+  });
+}
