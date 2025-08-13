@@ -102,4 +102,4 @@ To run the application, you will need two separate terminals.
 
 ## How to Access
 
-Once the application is running, you can access it at `http://localhost:3000` in your web browser.
+Once the application is running, you can access it at `http://localhost:3002` in your web browser.

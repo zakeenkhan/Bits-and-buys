@@ -1,0 +1,18 @@
+version: "2"
+authtoken: 31EVQzCDzJZn7niDXWeoumAmrEG_6MHrvXC9KdmNq8HUh3JwG
+
+# Define your tunnels here
+tunnels:
+  # Frontend tunnel (React)
+  frontend:
+    addr: 3001
+    proto: http
+    host_header: localhost:3001
+    schemes: [https]
+
+  # Backend tunnel (Node.js)
+  backend:
+    addr: 5004
+    proto: http
+    host_header: localhost:5004
+    schemes: [https]

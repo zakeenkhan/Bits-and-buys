@@ -1,21 +1,21 @@
 // routes/offerRoutes.js
-import express from "express";
-import {
-  getSummerMenOffers,
-  getSummerWomenOffers,
-  getSummerKidsOffers,
-  getClearanceOffers,
-  getBundleOffer,
-  getBOGOOffer, 
-} from "../controllers/offerController.js";
+const express = require('express');
 
-const router = express.Router();
+module.exports = (pool) => {
+  const router = express.Router();
 
-router.get("/men", getSummerMenOffers);
-router.get("/women", getSummerWomenOffers);
-router.get("/kids", getSummerKidsOffers);
-router.get("/clearance-items", getClearanceOffers);
-router.get("/bundle", getBundleOffer);
-router.get("/bogo", getBOGOOffer); 
+  // GET /api/summer-offers
+  router.get('/', async (req, res) => {
+    try {
+      const { rows } = await pool.query(
+        'SELECT * FROM products WHERE on_sale = true ORDER BY discount_percentage DESC'
+      );
+      res.json(rows);
+    } catch (err) {
+      console.error('Error fetching offers:', err);
+      res.status(500).json({ error: 'Failed to fetch offers' });
+    }
+  });
 
-export default router;
+  return router;
+};
