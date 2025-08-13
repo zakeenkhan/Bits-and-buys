@@ -1,8 +1,6 @@
 import express from 'express';
 
-const express = require('express');
-
-module.exports = (pool) => {
+export default (pool) => {
   const router = express.Router();
 
   // GET /api/products

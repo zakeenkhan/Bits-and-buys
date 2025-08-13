@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
 
-module.exports = (pool) => {
+export default (pool) => {
   const router = express.Router();
 
   // GET /api/orders
