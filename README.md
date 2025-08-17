@@ -6,13 +6,25 @@ Bits and Buy is a full-stack e-commerce application designed to provide a seamle
 
 Here are some screenshots of the application in action:
 
-| ![Home Page](screenshorts/Capture1.JPG) | ![Product Page](screenshorts/Capture2.JPG) |
-| :-------------------------------------: | :---------------------------------------: |
-|                **Home Page**                |              **Product Page**               |
+| ![Home Page](screenshorts/Capture1.JPG) | ![Product Page](screenshorts/Capture2.JPG) | ![Product Details](screenshorts/Capture3.JPG) |
+| :-------------------------------------: | :---------------------------------------: | :-------------------------------------------: |
+|                **Home Page**            |              **Product Page**             |            **Product Details**                |
 
-| ![Cart](screenshorts/cart.JPG) | ![Checkout](screenshorts/checkout.JPG) |
-| :----------------------------: | :------------------------------------: |
-|              **Cart**              |                **Checkout**                |
+| ![Cart](screenshorts/cart.JPG) | ![Checkout](screenshorts/checkout.JPG) | ![Buy One Get One](screenshorts/buyonegetfree.JPG) |
+| :----------------------------: | :------------------------------------: | :-----------------------------------------------: |
+|              **Cart**          |                **Checkout**            |             **Special Offers**                    |
+
+| ![Clearance](screenshorts/clearnace.JPG) | ![Category 1](screenshorts/Capture4.JPG) | ![Category 2](screenshorts/Capture5.JPG) |
+| :--------------------------------------: | :-------------------------------------: | :-------------------------------------: |
+|              **Clearance**               |             **Category Page**           |             **Category Page**           |
+
+| ![Feature 1](screenshorts/Capture6.JPG) | ![Feature 2](screenshorts/Capture7.JPG) | ![Feature 3](screenshorts/Capture8.JPG) |
+| :-------------------------------------: | :-------------------------------------: | :-------------------------------------: |
+|             **Feature 1**               |              **Feature 2**              |              **Feature 3**              |
+
+| ![Feature 4](screenshorts/Capture9.JPG) |
+| :-------------------------------------: |
+|             **Feature 4**               |
 
 ## Tech Stack
 
